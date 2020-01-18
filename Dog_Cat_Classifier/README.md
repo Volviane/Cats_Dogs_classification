@@ -47,6 +47,6 @@ python main2.py
 
 ## Notes
 The  Dog_Cat_Classifier older is a subfolder of Cats_Dogs_classification. 
-So when you clone tCats_Dogs_classification repository make sure you got on Dog_Cat_Classifier before run the code
+So when you clone Cats_Dogs_classification repository make sure you go on Dog_Cat_Classifier before run the code
 
-Contact: smfogo@aimsammi.org
+Contacts: smfogo@aimsammi.org,  [linkedIn](https://www.linkedin.com/in/volviane-saphir-mfogo-7a181314b/)

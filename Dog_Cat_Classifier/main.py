@@ -5,13 +5,14 @@ Created on Thu Jan 16 21:03:48 2020
 
 @author: Saphir Volviane
 """
-
+import sys
 import os
 import torch
 import torch.optim as optim
 import torch.nn.functional as F
 from torchvision import datasets ,models,transforms
-from model import  CNN
+from model import  CNN1
+from model import  CNN2
 from  dataset import DatasetLoader
 
 
@@ -89,7 +90,7 @@ if __name__ == "__main__":
     output_size = 2
     accuracy_list = []
     # define training, valid and test data directories
-    data_dir = './data/Dog_Cat_Dataset/'
+    data_dir = './Cat_Dog_data/'
     train_dir = os.path.join(data_dir, 'train/')
     #valid_dir = os.path.join(data_dir, 'valid/')
     test_dir = os.path.join(data_dir, 'test/')
@@ -126,15 +127,23 @@ if __name__ == "__main__":
         num_workers=num_workers)
     
     
-    # Training settings 
-    n_features =6 # number of feature maps
-    model_cnn = CNN(input_size, n_features, output_size)
-    #we change the device if the GPU is available
+    # Training settings  for the first model
+    n_features = 8 # number of feature maps
+    #print(int(sys.argv[1:][0]))
+    if int(sys.argv[1:][0])==2:
+        model_cnn = CNN1(input_size, n_features, output_size) 
+    elif int(sys.argv[1:][0])==4:
+        model_cnn = CNN2(input_size, n_features, output_size)
+    else:
+        print("Wrong argument!!! the model with {} convolution(s) is not implement".format(int(sys.argv[1:][0])))
+        exit()
+        
+     #we change the device if the GPU is available
     if  torch.cuda.is_available():
       model_cnn = model_cnn.cuda()
     optimizer = optim.SGD(model_cnn.parameters(), lr=0.01, momentum=0.5)
-    print('Number of parameters: {}'.format(get_n_params(model_cnn)))
+    print('Number of parameters for the first CNN: {}'.format(get_n_params(model_cnn)))
     
-    for epoch in range(0, 1):
+    for epoch in range(0, 10):
         train(epoch, model_cnn)
         test(model_cnn)

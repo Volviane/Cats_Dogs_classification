@@ -34,12 +34,12 @@ whether containing invalid characters or image with wrong extension. The data sh
 
 
 3. Training and Evaluation
-* To run the code the first model wich is simple just 2 convolutions
+* To run the code of the first model wich is simple just 2 convolutions
 ~~~~
 python main1.py
 ~~~~
 
-* To run the code the Second model wich is a bit complex with 4 convolutions
+* To run the code of the Second model wich is a bit complex with 4 convolutions
 ~~~~
 python main2.py
 ~~~~
@@ -47,6 +47,6 @@ python main2.py
 
 ## Notes
 The  Dog_Cat_Classifier older is a subfolder of Cats_Dogs_classification. 
-So when you clone tCats_Dogs_classification repository make sure you got on Dog_Cat_Classifier before run the code
+So when you clone Cats_Dogs_classification repository make sure you go on Dog_Cat_Classifier before run the code
 
-Contact: smfogo@aimsammi.org
+Contacts: smfogo@aimsammi.org,  [linkedIn](https://www.linkedin.com/in/volviane-saphir-mfogo-7a181314b/)

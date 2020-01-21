@@ -57,4 +57,14 @@ Wrong argument!!! the model with 9 convolution(s) is not implement
 The  Dog_Cat_Classifier older is a subfolder of Cats_Dogs_classification. 
 So when you clone Cats_Dogs_classification repository make sure you go on Dog_Cat_Classifier before run the code
 
+## Experiences
+Using [tensorboard](https://pytorch.org/docs/stable/tensorboard.html) we were able to do experience
+The first batch sample is visualize as :
+![Batch sample](./experience/images.png)
+![Projector](./experience/projector.png)
+![Scalar: Trainning loss](./experience/traning_loss.svg)
+![Scalar: Trainning loss](./experience/tranningloss.png)
+![Graphs](./experience/cat_dog_experiment_1.png)
+![prediction](./experience/predictionimag.png)
+
 Contacts: smfogo@aimsammi.org,  [linkedIn](https://www.linkedin.com/in/volviane-saphir-mfogo-7a181314b/)

@@ -36,14 +36,22 @@ whether containing invalid characters or image with wrong extension. The data sh
 3. Training and Evaluation
 * To run the code of the first model wich is simple just 2 convolutions
 ~~~~
-python main1.py
+$ python main.py 2
 ~~~~
 
 * To run the code of the Second model wich is a bit complex with 4 convolutions
 ~~~~
-python main2.py
+$ python main.py 4
 ~~~~
+please note that if you do not respect the value of the argument you will get an error message.
+For instance if you run 
+~~~~
+$ python main.py 9
+you will get the following message:
 
+Wrong argument!!! the model with 9 convolution(s) is not implement
+
+~~~~
 
 ## Notes
 The  Dog_Cat_Classifier older is a subfolder of Cats_Dogs_classification. 

@@ -61,10 +61,9 @@ So when you clone Cats_Dogs_classification repository make sure you go on Dog_Ca
 Using [tensorboard](https://pytorch.org/docs/stable/tensorboard.html) we were able to do experience
 The first batch sample is visualize as :
 ![Batch sample](./experience/images.png)
-![Projector](./experience/projector.png)
-![Scalar: Trainning loss](./experience/traning_loss.svg)
-![Scalar: Trainning loss](./experience/tranningloss.png)
 ![Graphs](./experience/cat_dog_experiment_1.png)
-![prediction](./experience/predictionimag.png)
+![Projector](./experience/projector.png)
+![Scalar- Trainning loss](./experience/trainningloss.png)
+![prediction](./experience/predictionimage.png)
 
 Contacts: smfogo@aimsammi.org,  [linkedIn](https://www.linkedin.com/in/volviane-saphir-mfogo-7a181314b/)
